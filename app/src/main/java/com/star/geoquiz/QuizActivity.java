@@ -16,8 +16,8 @@ public class QuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
-        mTrueButton = (Button) findViewById(R.id.true_button);
-        mFalseButton = (Button) findViewById(R.id.false_button);
+        mTrueButton = findViewById(R.id.true_button);
+        mFalseButton = findViewById(R.id.false_button);
 
         mTrueButton.setOnClickListener(v -> {
             Toast toast = Toast.makeText(QuizActivity.this, R.string.correct_toast,
